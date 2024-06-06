@@ -4,7 +4,7 @@ import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
 import Footer from "../components/Footer";
 import bannerAbout from "../assets/banner-about.png";
-import "../styles/about.css";
+import "../styles/about.scss";
 
 const About = () => {
     const fiabilite = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."

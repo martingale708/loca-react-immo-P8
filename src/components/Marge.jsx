@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/marge.css"
+import "../styles/marge.scss"
 
 const Marge = ({children}) => {
     return (

@@ -5,8 +5,8 @@ import records from '../data/logements.json'; // Importez votre fichier logement
 import Header from "../components/Header";
 import Collapse from "../components/Collapse";
 import SlideShow from '../components/SlideShow';
-import "../styles/header.css"
-import "../styles/location.css";
+import "../styles/header.scss"
+import "../styles/location.scss";
 import Footer from "../components/Footer";
 import PageError from "../pages/PageError";
 
@@ -14,7 +14,7 @@ const arrayStars = [1, 2, 3, 4, 5];
 
 function Location() {
   const { id } = useParams(); // Récupère l'ID depuis l'URL
-  const cleanId = id.replace('id=', ''); // Nettoie l'ID en enlevant le préfixe 'id='
+  const cleanId = id.replace('id=', ''); // Enleve le préfixe 'id='
   console.log("ID Logement:", cleanId); // Log pour vérifier l'ID nettoyé
 
   // Log pour vérifier les données importées
@@ -25,7 +25,6 @@ function Location() {
 
   // Normalisez l'ID avant la comparaison
   const record = records.find((element) => {
-    console.log("Comparing", element.id, "with", cleanId);
     return element.id === cleanId;
   });
 
@@ -34,7 +33,6 @@ function Location() {
   if (!record) {
     return <PageError />;
   }
-
   const equipements = record.equipments.map((element, index) => (
     <li className="description-content" key={`equip-${index}`}>
       {element}

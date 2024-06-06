@@ -1,8 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/home.css';
-import "../styles/card.css"
+import '../styles/home.scss';
+import "../styles/card.scss"
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import bannerHome from '../assets/banner-home.png';

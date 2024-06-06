@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import chevronLeft from "../assets/chevron-left..png"
 import chevronRight from "../assets/chevron-right.png"
-import "../styles/slideShow.css"
+import "../styles/slideShow.scss"
 
 const SlideShow = ({pictures}) => {
     const [index, setIndex] = useState(0)  // variable de compteur, défini au départ sur 0

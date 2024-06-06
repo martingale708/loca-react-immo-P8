@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/card.css";
+import "../styles/card.scss";
 import "../data/logements.json";
 
 const Card = ({ cover, title }) => {

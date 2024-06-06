@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom'
 import logo from "../assets/logo.png"
-import "../styles/header.css"
+import "../styles/header.scss"
 const Header = () => {
     return (
         <nav className='navbar'>
