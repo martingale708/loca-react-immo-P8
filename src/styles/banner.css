@@ -1,0 +1,21 @@
+.banner-image{
+    max-width: 90vw;
+    background-image: url( "../assets/banner-home.png"); 
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 0 2rem;
+   min-height: 120px;
+    margin: auto;
+    background-image: cover center;
+    color: white;
+    margin-bottom: 30px; 
+}
+@media  and (max-width:760px) {
+    .banner-image{
+        margin-bottom:0;
+    }
+}

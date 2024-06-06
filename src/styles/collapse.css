@@ -1,0 +1,91 @@
+.collapse {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.collapse__content .visible p {
+  color: #FF6060;
+  padding: 36px 27px 19px 18px;
+  margin: 0;
+  background-color: #F6F6F6;
+  text-align: justify;
+  list-style-type: none;
+  
+}
+
+.collapse__content p{
+font-size: 19px;
+font-weight: light;
+padding: 15px;
+color: black;
+background-color: #F6F6F6;
+
+}
+.collapse__header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 28px;
+  background-color: #FF6060;
+  color: white;;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 2px;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.collapse__header span {
+  padding-right: auto;
+}
+
+.chevronValue img {
+  width: 25px;
+  height: 15px;
+}
+
+.collapse__content .visible {
+position: relative;
+top: -10px;
+font-size: 18px;
+color: #FF6060;
+background-color:#F6F6F6;
+margin: 0;
+border-radius: 10px;
+z-index: -1;   
+}
+.equipement-content {
+  margin: 0;
+}
+
+/* ANIMATION CHEVRON */
+
+.chevron {
+  transition: transform 0.3s ease-in-out;
+}
+
+.chevron.rotate {
+  transform: rotate(180deg);
+}
+
+.collapse__content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  /* padding: 0 10px; */
+}
+
+.collapse__content.visible {
+  max-height: 200px; 
+  opacity:1;
+   padding: 10px 10px; 
+}
+
+.collapse__content.hidden {
+  max-height: 0;
+  padding: 0 10px;
+  opacity: 0;
+}

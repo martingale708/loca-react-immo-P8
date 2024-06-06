@@ -1,0 +1,52 @@
+.navbar{
+     margin: 40px 60px 40px 50px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+.navabar_logo{
+  width: 13.2rem;
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+}
+#navbar_page{
+  display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar_logo img{
+    width: 100%;
+}
+.navbar_page-link{
+  font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        text-align: right;
+        line-height: 142.6%;
+        padding-left: 3.5rem;
+        color:black;
+    }
+  
+  #navbar_page a.active {
+    text-decoration: underline ;
+    color: black;
+  } 
+ 
+@media screen and (max-width :768px) {
+  .navbar{
+    margin:5%;
+  }
+  .navbar_page-link{
+    padding-left: 1.5rem;
+    font-size: 16px;
+  }
+  .navbar_page-link[href="/"],.navbar_page-link[href="/about"]{
+    text-transform: uppercase;
+  }
+  .navbar_logo img{
+    width:80%;
+  }
+}

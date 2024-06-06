@@ -1,0 +1,73 @@
+.SlideShow {
+    position: relative;
+    height: 415px;
+    width: 100%;
+    margin-top: 30px;
+    }
+
+.SlideShow p {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin-top: 340px;
+    text-align: center;
+}
+
+.classImage {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.SlideShow button {
+    border: none;
+    background-color: transparent;
+    display: hidden;
+    color: white;
+}
+
+.classarrowleft {
+    position: absolute;
+    content: "";
+    color: white;
+    inset: 0;
+    top: 40%;
+    cursor: pointer;
+    left: 0;
+}
+
+.classarrowright {
+    position: absolute;
+    content: "";
+    color: white;
+    inset: 0;
+    top: 40%;
+    cursor: pointer;
+    left: calc(100% - 50px);
+}
+.div-image{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .SlideShow { 
+        height: 255px; 
+    }
+    .classarrowleft { 
+        height: 30px; 
+    }
+    .classarrowright{
+        height: 30px;
+        left: calc(100% - 20px)
+    }
+    .SlideShow p { 
+        top: 70% 
+    }
+}
