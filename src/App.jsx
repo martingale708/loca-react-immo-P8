@@ -1,11 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import './App.css';
+import './App.scss';
 import About from "./pages/About";
 import Location from "./pages/Location";
 import PageError from "./pages/PageError";
-import './App.css';
 const App = () => {
   return (
     <BrowserRouter>

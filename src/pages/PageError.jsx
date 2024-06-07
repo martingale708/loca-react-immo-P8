@@ -7,15 +7,22 @@ import "../styles/pageError.scss";
 
 const PageError = () => {
     return (
-        <div>
+        <>
             <Header/>
-        <div className='error commun-error'>
-                    <span>404</span>
+            <div className='error-container'>
+                    <div className='error-container__number'>
+                    <h1>404</h1>
+                    </div>
+                    <div className='error-container__title'>
                     <h4>Oups! La page que vous demandez n'existe pas.</h4>
+                    </div>
+                   <div className='error-container__subtitle'> 
                     <p><Link to="/">Retourner sur la page d’accueil</Link></p>
-         </div>
+                   </div>
+                   
+           </div>
          <Footer/>
-         </div>
+         </>
     );
     
 };

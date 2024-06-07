@@ -1,3 +1,4 @@
+@import "../SCSS/variables.scss";
 .footer {
     margin-top: 10px;
     width: 100%;
@@ -6,16 +7,18 @@
     justify-content: center;
     gap: 45px;
     height: 209px;
-    background: black;
-    color: white;;
-    font-size: 24px;
+    background: $color-footer;
+    color:$color-secondary;
+    font-weight: 500;
+    font-size: 1.5rem;
     place-items: center;
     &_image{
-        height: 50px; 
-        width: 150px; 
+        height: 39px; 
+        width: 122px; 
     }
 }
-// .footer_image{
-//     height: 50px; 
-//     width: 150px; 
-// }
+@media screen and (max-width:768px){
+    .footer p{
+        text-align: center;
+    }
+}

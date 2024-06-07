@@ -1,11 +1,16 @@
+
+@import "../SCSS/variables.scss";
+
 .navbar{
-     margin: 40px 60px 40px 50px; 
+     margin: 40px 75px 40px 65px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 700;
     &_logo{
+      flex: 1;
       width: 13.2rem;
+      height: 68px;
       display: flex;
       align-items: flex-start;
       margin: 0;
@@ -26,7 +31,7 @@
 }
 
 .navbar_page-link{
-  font-size: 20px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 500;
         text-align: right;
@@ -35,23 +40,36 @@
         color:black;
     }
   
-    // #navbar_page a.active {
-    //   text-decoration: underline ;
-    //   color: black;
-    // } 
  
-@media screen and (max-width :768px) {
+    @media screen and (max-width :768px) {
   .navbar{
     margin:5%;
+    &_logo{
+      width: 9rem;
+      height: 45px;
+            margin-left: 17px;
+      & img{
+        width:100%;
+      }
+    }
+    &_page{
+      gap: 20px;
+    }
   }
   .navbar_page-link{
     padding-left: 1.5rem;
-    font-size: 16px;
+    font-size: 12px;
   }
   .navbar_page-link[href="/"],.navbar_page-link[href="/about"]{
     text-transform: uppercase;
   }
-  .navbar_logo img{
-    width:80%;
-  }
+  
+}
+@media screen and (max-width :365px){
+.navbar_page-link{
+  gap: 20px;
+  padding-left: 0.2rem;
+  padding-right: 0.1rem;
+  font-size: 12px;
+}
 }

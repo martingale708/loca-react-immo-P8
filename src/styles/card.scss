@@ -1,8 +1,9 @@
+@import "../SCSS/variables.scss";
 .cards-container {
   width: 90%;
-  margin: auto;
+  margin:  40px auto;
   border-radius: 20px;
-    background-color: #F6F6F6;
+    background-color:$color-background;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -13,7 +14,7 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   width: 29%;
-  background-color: #FF6060;
+  background-color:$color-primary;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
 
@@ -24,19 +25,19 @@
 }
   
   .card-content {
-    /* background-color: #FF6060; */
     padding: 16px;
   }
   
   .card-title {
-    color: white;
-    font-size: 1rem;
+    color:$color-secondary;
+    font-weight: 700;
+    font-size: 1.1rem;
     margin: 0;
   }
   @media (max-width: 760px) {
     .cards-container { 
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
-        background-color: white;
+        background-color: $background-light;
         
     }
     .card{

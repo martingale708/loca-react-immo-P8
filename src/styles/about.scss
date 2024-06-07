@@ -1,9 +1,14 @@
-.about {
+@import "../SCSS/variables.scss";
+ .about {
     display: flex;
-    color: #FF6060;
+    color: $color-primary;
     flex-direction: column;
     padding-inline: 130px;
     margin-top: 15px;
+    margin-bottom: 30px;
+    @media(max-width:768px){
+        padding-inline: 25px;
+    }
 }
 
 .flex {
@@ -11,13 +16,4 @@
     width: 100%;
     height: 100%;
     flex-direction: column;
-}
-
-
-@media (max-width: 760px) { 
-    .about { padding-inline: 25px;
-    padding-bottom: 20px; }
-    .banner-image{
-        margin-bottom: 0;
-    }
 }
