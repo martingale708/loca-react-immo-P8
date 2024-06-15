@@ -1,0 +1,81 @@
+@import "../SCSS/variables.scss";
+.collapse {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 50px;
+    background-color:$color-primary;
+    color:$color-secondary;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px 20px 10px 20px;
+    border-radius: 2px;
+    align-items: center;
+    cursor: pointer;
+    & span{
+      font-weight: 700;
+      font-size: 1.5rem;
+      padding-right: auto;
+    }
+    & img {
+      width: 25px;
+      height: 15px;
+    }
+  }
+  &__content .visible {
+    position: relative;
+    top: -10px;
+    font-size: 18px;
+    margin: 0;
+    border-radius: 10px;
+    z-index: -1;   
+    }
+    &__content p{
+      font-size: 19px;
+      font-weight: light;
+      flex: 1;
+      padding: 15px;
+      color: $color-footer;
+      background-color: $color-background;
+      
+      }
+}
+
+.equipement-content {
+  margin: 0;
+}
+
+/* ANIMATION CHEVRON */
+
+.chevron {
+  transition: transform 0.3s ease-in-out;
+}
+
+.chevron.rotate {
+  transform: rotate(-180deg);
+}
+
+.collapse__content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.collapse__content.visible {
+  display: flex;
+  max-height: 200px; 
+  opacity:1;
+   padding: 0; 
+   height: 100%;
+}
+
+.collapse__content.hidden {
+  max-height: 0;
+  padding: 0 10px;
+  opacity: 0;
+}

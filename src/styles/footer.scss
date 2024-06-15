@@ -1,0 +1,24 @@
+@import "../SCSS/variables.scss";
+.footer {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 45px;
+    height: 209px;
+    background: $color-footer;
+    color:$color-secondary;
+    font-weight: 500;
+    font-size: 1.5rem;
+    place-items: center;
+    &_image{
+        height: 39px; 
+        width: 122px; 
+    }
+}
+@media screen and (max-width:768px){
+    .footer p{
+        text-align: center;
+    }
+}

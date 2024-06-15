@@ -1,0 +1,13 @@
+@import "./SCSS/variables.scss";
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+li{
+  list-style-type: none;
+}
+#root{
+  width: 100%;
+}

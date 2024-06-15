@@ -1,0 +1,36 @@
+@import "../SCSS/variables.scss";
+.banner-image{
+    max-width: 90vw;
+    background-image: url( "../assets/banner-home.png"); 
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 0 2rem;
+   min-height: 120px;
+   height: 223px;
+    margin: auto;
+    background-image: cover center;
+    color:$background-light;
+    margin-bottom: 15px; 
+    @media  screen and (max-width:760px) {
+          margin-bottom:0;
+          & h1{
+            text-align: center;
+         }   
+        }
+        // & h1{
+        //     text-align: center;
+        //  }   
+}
+
+// @media  screen and (max-width:760px) {
+//     .banner-image{
+//         margin-bottom:0;
+//     }
+//     .banner-image h1{
+//         text-align: center;
+//     }
+// }
