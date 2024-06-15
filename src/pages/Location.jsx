@@ -41,9 +41,7 @@ function Location() {
 
   return (
     <>
-     <div className="location-header">
         <Header />
-      </div>
       <div className="logement">
         <SlideShow pictures={record.pictures} />
         <div className="ficheLogement">

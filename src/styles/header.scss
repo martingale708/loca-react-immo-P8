@@ -2,7 +2,10 @@
 @import "../SCSS/variables.scss";
 
 .navbar{
-     margin: 40px 75px 40px 65px; 
+  width: 1240px;
+  max-width: 100%;
+    //  margin: 40px 75px 40px 65px; 
+    margin: 40px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,9 +44,11 @@
     }
   
  
-    @media screen and (max-width :768px) {
+    @media screen and (max-width :1240px) {
   .navbar{
-    margin:5%;
+     width: 90%;
+     margin: 5% auto;
+    // margin: auto;
     &_logo{
       width: 9rem;
       height: 45px;

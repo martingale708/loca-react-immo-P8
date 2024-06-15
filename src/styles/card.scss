@@ -1,6 +1,7 @@
 @import "../SCSS/variables.scss";
 .cards-container {
-  width: 90%;
+  width: 1240px;
+  max-width: 100%;
   margin:  40px auto;
   border-radius: 20px;
     background-color:$color-background;
@@ -18,10 +19,10 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
 
-&-image {
-  width: 100%;
-  height: 235px;
-}
+  &-image {
+    width: 100%;
+    height: 235px;
+  }
 }
   
   .card-content {
@@ -34,14 +35,15 @@
     font-size: 1.1rem;
     margin: 0;
   }
-  @media (max-width: 760px) {
+  @media (max-width: 1240px) {
     .cards-container { 
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
         background-color: $background-light;
         
     }
     .card{
-      width: 100%;
+      width: 90%;
+     
     }
 }
   

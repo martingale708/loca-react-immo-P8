@@ -1,6 +1,7 @@
 @import "../SCSS/variables.scss";
 .banner-image{
-    max-width: 90vw;
+    width: 1240px;
+    max-width: 100%;
     background-image: url( "../assets/banner-home.png"); 
     background-position: center;
     background-size: cover;
@@ -15,22 +16,14 @@
     background-image: cover center;
     color:$background-light;
     margin-bottom: 15px; 
-    @media  screen and (max-width:760px) {
+    @media  screen and (max-width:1240px) {
+     width: 90%;
+      margin: auto;
           margin-bottom:0;
           & h1{
             text-align: center;
          }   
         }
-        // & h1{
-        //     text-align: center;
-        //  }   
+          
 }
 
-// @media  screen and (max-width:760px) {
-//     .banner-image{
-//         margin-bottom:0;
-//     }
-//     .banner-image h1{
-//         text-align: center;
-//     }
-// }
