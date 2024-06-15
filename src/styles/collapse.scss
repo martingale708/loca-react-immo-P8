@@ -38,7 +38,10 @@
     &__content p{
       font-size: 19px;
       font-weight: light;
+<<<<<<< HEAD
       flex: 1;
+=======
+>>>>>>> 3c3136761d58e51f7893aed30377e7c3b4efc8a3
       padding: 15px;
       color: $color-footer;
       background-color: $color-background;
@@ -67,11 +70,17 @@
 }
 
 .collapse__content.visible {
+<<<<<<< HEAD
   display: flex;
   max-height: 200px; 
   opacity:1;
    padding: 0; 
    height: 100%;
+=======
+  max-height: 200px; 
+  opacity:1;
+   padding: 0; 
+>>>>>>> 3c3136761d58e51f7893aed30377e7c3b4efc8a3
 }
 
 .collapse__content.hidden {
